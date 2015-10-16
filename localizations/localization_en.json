@@ -1,0 +1,13 @@
+{  
+    "interfaceLanguage":"Inteface language:",
+    "login": "Username",
+    "password":"Password",
+    "email":"E-Mail",
+    "newUser":"Confirm and sign up",
+    "wrongLogin":"Username may contain only alphanumberic characters, dot, line and underline!",
+    "wrongPassword":"Password may contain only alphanumberic and special characters!",
+    "wrongEmail":"E-Mail must look like user@example.com",
+    "selectPhoto":"Select file to send: ",
+    "signin":"Sign in",
+    "register":"Sign up"
+}

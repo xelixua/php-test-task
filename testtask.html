@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Test task</title>
+</head>
+<body>
+    <form action="testtask.php" method="post" ENCTYPE="multipart/form-data">
+        <p id="iterfaceLanguage">Язык интерфейса:</p>
+        <select id="langselect">
+            <option>русский</option>
+            <option>english</option>
+        </select>
+        <br><br>
+        <input type="text" name="login" value="Имя пользователя"/>
+        <p id="erroredLogin" style="display:none">Логин может содержать только латинские буквы, цифры, точку, тире и знак подчеркивания!</p>
+        <br>
+        <input type="password" name="password" value="Пароль"/> 
+        <p id="erroredPassword" style="display:none">Пароль может содержать только цифры, латинские буквы и спецсимволы!</p>
+        <br>
+        <input type="text" name="email" value="E-Mail" style="display:none"/>
+        <p id="erroredEmail" style="display:none">Адрес E-Mail должен иметь вид user@example.com</p>
+        <br>
+        <p id="photoInvite" style="display:none">Выберите файл для отправки: </p>
+        <input type="file" name="userfile" style="display:none">
+        <input type="hidden" name="dataType" value="login"/>
+        <input type="hidden" name="lang" value="ru"/>
+        <p><input id="submitButton" type="submit" value="Вход" onsubmit="validateLoginData()"/></p>
+        <p><input id="newUser" type="button" value="Регистрация"/></p>
+    </form>
+    <script type="text/javascript" src="client.js" charset="utf-8"></script>
+</body>
+</html>
